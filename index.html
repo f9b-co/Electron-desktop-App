@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CDA - ECF _ ASYNC / AWAIT / Electron desktop app _ ITSchool P2 - Fabien Massucco</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        h2 {
+            font-size: medium;
+        }
+
+        .be-bold {
+            font-weight: 600;
+        }
+
+        .be-small {
+            font-size: small;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app" class="container-fluid">
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                <h2>GET COMPONENT A - EU countries with capitals</h2>
+            </div>
+            <div id="component-a" class="card-body, be-small">Waiting...</div>
+        </div>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                <h2>GET COMPONENT B - France details</h2>
+            </div>
+            <div id="component-b" class="card-body, be-small">Waiting...</div>
+        </div>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                <h2>GET COMPONENT C - Search on capital = 'paris'</h2>
+            </div>
+            <div id="component-c" class="card-body, be-small">Waiting...</div>
+        </div>
+        <hr>
+        <div class="card">
+            <div class="card-header">
+                <h2>GET COMPONENT D - Search on iso code language = 'fr'</h2>
+            </div>
+            <div id="component-d" class="card-body, be-small">Waiting...</div>
+        </div>
+        <hr>
+        <button id="button">Fetch data</button>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        const button = document.querySelector('#button');
+        button.addEventListener('click', (e) => fetchAndDisplayData(e));
+    </script>
+</body>
+
+</html>
